@@ -1,0 +1,97 @@
+:root{
+  --transition: all 0.3s linear;
+  --radius : 0.5rem;
+}
+.header {
+    position: absolute;
+    top:30%
+  }
+  .video-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  h1 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+  }
+  h2{  
+    margin-top: 10%;
+    position:relative;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+  }
+  h3{
+    color:black;
+   
+    font-size: 15px;
+    text-align: center;
+}
+.body-center{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+/* 소개 버튼 */
+.introbtn{
+  margin-top:10px;
+    width: 20%;
+    height: 7%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border:solid black;
+    border-width :3px;
+    background: none;
+        
+}  
+
+.introbtn:hover{
+  background-color:solid white;
+  color:black;
+}
+
+/* 스위치버튼 */
+.switch-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: var(--transition);
+  }
+  .switch-btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: black;
+  }
+  .switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    border-radius: var(--radius);
+    margin: 0;
+    display: block;
+    transition: var(--transition);
+  }
+  .slide .switch {
+    left: 50%;
+  }
